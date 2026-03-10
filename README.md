@@ -1,73 +1,43 @@
-# Welcome to your Lovable project
+# Eika Africa Experience
 
-## Project info
+A travel booking platform that helps people discover and book authentic African safari experiences. Whether you're looking for gorilla trekking in Uganda, wildlife safaris in Kenya, or cultural tours across the continent, we connect travelers with handpicked experiences that showcase the best of Africa.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Features
 
-## How can I edit this code?
+- Browse safari tours and experiences by destination
+- Detailed tour pages with itineraries, pricing, and galleries
+- Online booking with inquiry system
+- Blog for travel inspiration and tips
+- Newsletter subscription
+- Admin dashboard for managing content
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- React 18 with TypeScript
+- Vite for builds
+- Tailwind CSS for styling
+- shadcn/ui component library
+- Supabase for database, auth, and storage
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+Clone the repo, install dependencies, and start the dev server:
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+The app runs on localhost:8080 by default.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Deployment
 
-**Use GitHub Codespaces**
+Works with any static hosting that supports Vite apps. Currently deployed on Vercel.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+- src/pages - Route components (home, tours, booking, admin)
+- src/components - Reusable UI components
+- src/integrations/supabase - Database client and types
+- supabase/functions - Edge functions for emails
+- supabase/migrations - Database schema
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+See the other docs in this repo for specific setup instructions (admin users, email system, etc).
