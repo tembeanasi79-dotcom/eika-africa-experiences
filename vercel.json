@@ -1,7 +1,8 @@
 {
   "framework": "vite",
-  "buildCommand": "bun run build",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "packageManager": "npm@11",
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ]
